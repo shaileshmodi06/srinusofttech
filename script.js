@@ -20,17 +20,17 @@ $(document).ready(function(){
     });
 
     // sample video popup
-    $(document).ready(function() {
-        $('.popup-youtube').magnificPopup({
-            disableOn: 700,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
+    // $(document).ready(function() {
+    //     $('.popup-youtube').magnificPopup({
+    //         disableOn: 700,
+    //         type: 'iframe',
+    //         mainClass: 'mfp-fade',
+    //         removalDelay: 160,
+    //         preloader: false,
     
-            fixedContentPos: false
-        });
-    });
+    //         fixedContentPos: false
+    //     });
+    // });
 
     // team carousel 
     $('.team .owl-carousel').owlCarousel({
@@ -76,14 +76,9 @@ $(document).ready(function(){
         items: 1
     });
 
-    let products = null;
-fetch('products.json')
-.then(response =>response.json())
-.then(data=> {
-    products = data;
-    console.log(products);
 
-})
+
+
 
 });
 
