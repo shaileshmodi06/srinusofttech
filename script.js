@@ -6,6 +6,11 @@ $(document).ready(function(){
 
     // navigation bar toggle
     $('#navbar-toggler').click(function(){
+        if ($('.navbar-collapse').css('display') === 'none') {
+            $('.navbar-collapse').css('display', 'block');
+        } else {
+            $('.navbar-collapse').css('display', 'none');
+        }
         $('.navbar-collapse').slideToggle(400);
     });
 
